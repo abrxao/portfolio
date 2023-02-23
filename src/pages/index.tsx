@@ -1,5 +1,5 @@
 import Header from "@/components/Header/Header";
-import { FunctionComponent, useState } from "react"
+import { FunctionComponent} from "react"
 
 const Home:FunctionComponent=()=> {
 
