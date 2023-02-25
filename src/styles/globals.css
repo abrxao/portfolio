@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 @import './fonts/stylesheet.css';
+@import '../components/SlideMenu/SlideMenu.css';
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+.mapBackground{
+ background-image: url('../../public/map-texture.png');
+ 
+}
 
+.devFrontend__text{
+  -webkit-text-stroke: .6px #f2a172;
+}
 html,
 body {
   max-width: 100vw;

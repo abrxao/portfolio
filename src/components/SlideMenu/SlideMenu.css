@@ -1,0 +1,33 @@
+.swiper {
+  height: 100vh;
+  max-height: 600px;
+  width: 220px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 999;
+  right: 15%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.swiper__title {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: -5px;
+  animation: softMove 5s linear infinite;
+  background-image: linear-gradient(#f2a172,#4f1ca0,#f2a172,#4f1ca0,#f2a172);
+}
+
+.swiper:hover + .swiper__title {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes softMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% -250%;
+  }
+}

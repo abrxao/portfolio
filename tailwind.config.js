@@ -4,28 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "dark-50": "#07080D",
-        "dark-150": "#262626",
-        "dark-100": "#1d1d1d",
-        "gray-50": "#d9d9d9",
-        "gray-100": "#a1a2a6",
-        "gray-150": "#77808c",
-        blueGray: "#84a9bf",
-        beige: "#f2a88d",
-        oranBeige: "#f2a172",
-        "yellow-150": "#f2cd13",
-        "yellow-100": "#f2d194",
-        "yellow-50": "#f2e0bd",
-        "orange-50": "#f28b0c",
-        "orange-100": "#f2600c",
-        brown: "#59190b",
-        mainRed: "#f2220f",
+        orange: "#f2a172",
+        purple: "#4f1ca0",
       },
       fontFamily: {
         aero: "Aero Matics",
-        kgSummer: "KG Summer Sunshine",
-        orangeJuice: "orange juice",
-        sketch: "Sketch",
+        "aero-display": "Aero Matics Display",
       },
       fontSize: {
         xsm: "0.65rem",
@@ -52,15 +36,7 @@ module.exports = {
         auto: "auto",
         cover: "cover",
         contain: "contain",
-        "50%": "50%",
-        16: "4rem",
-      },
-      backgroundPosition: {
-        "p-100%": "-100%",
-        "p200%": "205%",
-      },
-      animation:{
-        
+        "250%": "100% 250%",
       }
     },
   },

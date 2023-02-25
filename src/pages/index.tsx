@@ -1,11 +1,12 @@
-import Header from "@/components/Header/Header";
+import About from "@/components/Presentation/Presentation";
 import { FunctionComponent} from "react"
 
 const Home:FunctionComponent=()=> {
 
    return (
    <>
-   <Header/>
+   <About/>
+   
    </>);
 }
 
