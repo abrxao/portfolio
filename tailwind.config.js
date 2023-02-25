@@ -37,8 +37,11 @@ module.exports = {
         cover: "cover",
         contain: "contain",
         "250%": "100% 250%",
-      }
+      },
+      screens: {
+        xms: "350px",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

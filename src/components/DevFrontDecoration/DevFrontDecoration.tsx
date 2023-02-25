@@ -1,21 +1,20 @@
 import React from "react";
-
 const DevFrontDecoration=()=>{
     return (
-      <div className="z-[70] absolute right-[-15%] top-[38vh] rotate-[-90deg]">
-        <div className="text-[2.5em] font-aero mt-[-.4em]   devFrontend__text opacity-20">
+      <div className="z-[40] absolute xl:h-full xl:top-[-20px] right-0 flex flex-col DevFrontDecoration rotate-180 xl:text-[2.2em] 2xl:text-[2.3em] font-aero pb-4">
+        <div className="mr-[-.4em] devFrontend__text opacity-20 h-full text-center line-clamp-1 text-clip">
           DEV - FRONT END. DEV - FRONT END. DEV - FRONT END.
         </div>
-        <div className="text-[2.5em] font-aero mt-[-.4em] devFrontend__text opacity-40">
+        <div className="mr-[-.4em] devFrontend__text opacity-40 h-full text-center line-clamp-1 text-clip">
           DEV - FRONT END. DEV - FRONT END. DEV - FRONT END.
         </div>
-        <div className="text-[2.5em] font-aero mt-[-.4em] devFrontend__text opacity-60">
+        <div className="mr-[-.4em] devFrontend__text opacity-60 h-full text-center line-clamp-1 text-clip">
           DEV - FRONT END. DEV - FRONT END. DEV - FRONT END.
         </div>
-        <div className="text-[2.5em] font-aero mt-[-.4em] devFrontend__text opacity-80">
+        <div className="mr-[-.4em] devFrontend__text opacity-80 h-full text-center line-clamp-1 text-clip">
           DEV - FRONT END. DEV - FRONT END. DEV - FRONT END.
         </div>
-        <div className="text-[2.5em] font-aero mt-[-.4em] text-orange">
+        <div className="mr-[-.4em] text-orange h-full text-center line-clamp-1 text-clip">
           DEV - FRONT END. DEV - FRONT END. DEV - FRONT END.
         </div>
       </div>

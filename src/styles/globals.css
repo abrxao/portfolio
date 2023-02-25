@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import './fonts/stylesheet.css';
 @import '../components/SlideMenu/SlideMenu.css';
+@import '../components/DevFrontDecoration/DevFrontDecoration.css';
 
 * {
   box-sizing: border-box;
