@@ -11,11 +11,17 @@ import SlideMenu from "../SlideMenu/SlideMenu";
 const About = () => {
   return (
     <section id="presentation">
-      <div className="relative w-full h-[100vh] min-h-[600px] overflow-y-hidden flex flex-col overflow-x-hidden">
+      <div className="relative w-full h-[100vh] overflow-y-hidden flex flex-col overflow-x-hidden">
         <SlideMenu />
         <div
           className="
-       2xl:w-[900px] 2xl:h-[900px] 2xl:left-0 xl:w-[740px]  xl:h-[740px] xl:-left-20 absolute bg-gradient-to-tr from-purple via-purple to-[#fff0] rounded-[50%] 2xl:top-20 xl:top-[6em] z-10 brightness-75"
+          absolute bg-gradient-to-tr from-purple via-purple to-[#fff0] rounded-[50%]
+          z-10 brightness-75
+          2xl:top-20 2xl:w-[900px] 2xl:h-[900px] 2xl:left-0 
+          xl:w-[740px]  xl:h-[740px]  xl:top-24
+          lg:w-[600px]  lg:h-[600px] lg:-left-20 lg:top-20
+
+        "
         ></div>
 
         <Header />
@@ -36,18 +42,36 @@ const About = () => {
           />
         </div>
         <div className="aspect-[1] z-50 bottom-10 absolute h-[100vh]">
-          <Image src={perfil} alt="abraão´s picture" className="object-cover"/>
+          <Image src={perfil} alt="abraão´s picture" className="object-cover" />
         </div>
 
         <div className="self-center z-[9] absolute w-full h-[100vh] flex items-center flex-col justify-center">
-          <h1 className="text-white 2xl:text-[15em] -mt-20 xl:text-[12em] font-aero">
+          <h1
+            className="text-white font-aero -mt-20
+            2xl:text-[15em]
+            xl:text-[12em]
+            lg:text-[9em]
+            "
+          >
             Abraão
           </h1>
-          <h2 className="text-white 2xl:text-[7em] xl:text-[5.6em] xl:-ml-2 font-aero -mt-20 -ml-3">
+          <h2
+            className="text-white font-aero -ml-3
+            2xl:text-[7em] 
+            xl:text-[5.6em] xl:-ml-2 xl:-mt-20 
+            lg:text-[4.22em] lg: -mt-16
+            "
+          >
             ALBUQUERQUE
           </h2>
         </div>
-        <div className="2xl:w-[400px] 2xl:h-[200px] 2xl:left-[-120px] bg-[#111] z-[200] absolute bottom-0 rotate-[39deg]"></div>
+        <div
+          className="
+        bg-[#111] z-[200] absolute bottom-0 rotate-[39deg]
+          
+          lg:w-[440px] lg:h-[200px] lg:left-[-140px]
+          "
+        ></div>
         <DevFrontDecoration />
       </div>
     </section>

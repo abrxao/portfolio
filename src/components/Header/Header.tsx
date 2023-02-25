@@ -9,6 +9,7 @@ const Header: FunctionComponent = () => {
 
         2xl:text-5xl 
         xl:text-3xl
+        lg:text-2xl
       "
       >
         <li>about.</li>
