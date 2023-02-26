@@ -1,15 +1,26 @@
 .swiper {
-  transform: translate(0, -50%);
+  transform: translate(0, 0); 
 }
+
 
 .swiper__title {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  letter-spacing: -5px;
-  animation: softMove 5s linear infinite;
-  background-image: linear-gradient(#f2a172,#4f1ca0,#f2a172,#4f1ca0,#f2a172);
+  background-image: linear-gradient(to left, #f2a172,#4f1ca0,#f2a172,#4f1ca0,#f2a172);
+  animation: softMoveH 5s linear infinite;
 }
 
+@media (min-width: 1024px) {
+  .swiper__title {
+    background-image: linear-gradient(#f2a172,#4f1ca0,
+    #f2a172,#4f1ca0,#f2a172);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -5px;
+    animation: softMove 5s linear infinite;
+  }
+  
+
+
+}
 .swiper:hover + .swiper__title {
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -21,5 +32,14 @@
   }
   100% {
     background-position: 0% -250%;
+  }
+}
+
+@keyframes softMoveH {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -250% 0%;
   }
 }

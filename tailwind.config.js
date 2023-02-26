@@ -36,10 +36,13 @@ module.exports = {
         auto: "auto",
         cover: "cover",
         contain: "contain",
-        "250%": "100% 250%",
+        "250%": "250% 250%",
+      },
+      backgroundPosition:{
+        "p-30%": "22% 30%"
       },
       screens: {
-        xms: "350px",
+        xsm: "350px",
       },
     },
   },
