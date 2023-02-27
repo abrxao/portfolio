@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'Aero Matics Display';
-    src: url('AeroMaticsDisplayLightItalic.eot');
-    src: url('AeroMaticsDisplayLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('AeroMaticsDisplayLightItalic.woff2') format('woff2'),
-        url('AeroMaticsDisplayLightItalic.woff') format('woff'),
-        url('AeroMaticsDisplayLightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Aero Matics';
@@ -47,54 +36,6 @@
 }
 
 @font-face {
-    font-family: 'Aero Matics Display';
-    src: url('AeroMaticsDisplayRegular.eot');
-    src: url('AeroMaticsDisplayRegular.eot?#iefix') format('embedded-opentype'),
-        url('AeroMaticsDisplayRegular.woff2') format('woff2'),
-        url('AeroMaticsDisplayRegular.woff') format('woff'),
-        url('AeroMaticsDisplayRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Aero Matics Display';
-    src: url('AeroMaticsDisplayBold.eot');
-    src: url('AeroMaticsDisplayBold.eot?#iefix') format('embedded-opentype'),
-        url('AeroMaticsDisplayBold.woff2') format('woff2'),
-        url('AeroMaticsDisplayBold.woff') format('woff'),
-        url('AeroMaticsDisplayBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Aero Matics Display';
-    src: url('AeroMaticsDisplayItalic.eot');
-    src: url('AeroMaticsDisplayItalic.eot?#iefix') format('embedded-opentype'),
-        url('AeroMaticsDisplayItalic.woff2') format('woff2'),
-        url('AeroMaticsDisplayItalic.woff') format('woff'),
-        url('AeroMaticsDisplayItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Aero Matics Display';
-    src: url('AeroMaticsDisplayBoldItalic.eot');
-    src: url('AeroMaticsDisplayBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('AeroMaticsDisplayBoldItalic.woff2') format('woff2'),
-        url('AeroMaticsDisplayBoldItalic.woff') format('woff'),
-        url('AeroMaticsDisplayBoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Aero Matics';
     src: url('AeroMaticsRegular.eot');
     src: url('AeroMaticsRegular.eot?#iefix') format('embedded-opentype'),
@@ -114,18 +55,6 @@
         url('AeroMaticsBold.woff') format('woff'),
         url('AeroMaticsBold.ttf') format('truetype');
     font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Aero Matics Display';
-    src: url('AeroMaticsDisplayLightRegular.eot');
-    src: url('AeroMaticsDisplayLightRegular.eot?#iefix') format('embedded-opentype'),
-        url('AeroMaticsDisplayLightRegular.woff2') format('woff2'),
-        url('AeroMaticsDisplayLightRegular.woff') format('woff'),
-        url('AeroMaticsDisplayLightRegular.ttf') format('truetype');
-    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }

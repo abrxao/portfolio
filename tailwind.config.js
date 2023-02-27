@@ -12,7 +12,6 @@ module.exports = withMT({
       },
       fontFamily: {
         aero: "Aero Matics",
-        "aero-display": "Aero Matics Display",
       },
       fontSize: {
         xsm: "0.65rem",

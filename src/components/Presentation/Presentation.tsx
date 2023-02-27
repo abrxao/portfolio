@@ -70,7 +70,8 @@ const Presentation = () => {
               src={perfil}
               alt="abraão´s picture"
               className="object-cover"
-              width={1000}
+              sizes="(min-width: 0px) 500px
+                      (min-width: 1000px) 1000px"
             />
           </div>
           <div
