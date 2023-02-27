@@ -11,7 +11,7 @@
   margin: 0;
 }
 .mapBackground{
- background-image: url('../../public/map-texture.png');
+ background-image: url('../../public/map-texture.webp');
 }
 
 html,
