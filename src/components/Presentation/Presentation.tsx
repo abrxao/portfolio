@@ -70,6 +70,7 @@ const Presentation = () => {
               src={perfil}
               alt="abraão´s picture"
               className="object-cover"
+              width={1000}
             />
           </div>
           <div

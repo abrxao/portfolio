@@ -16,8 +16,16 @@ const Header: FunctionComponent = () => {
         <li>
           <Link href="#about">about.</Link>
         </li>
-        <li className="cursor-not-allowed"><Tooltip content="no ready">projects.</Tooltip></li>
-        <li>contact.</li>
+        <li className="cursor-not-allowed">
+          <Tooltip content="not ready" className="border border-white p-2">
+            projects.
+          </Tooltip>
+        </li>
+        <li className="cursor-not-allowed">
+          <Tooltip content="not ready" className="border border-white p-2">
+            contact.
+          </Tooltip>
+        </li>
       </ul>
     </header>
   );
