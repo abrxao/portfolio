@@ -62,7 +62,7 @@ const About = () => {
         <Resume />
         <PersonalInfos />
       </div>
-      <div className="font-aero text-white mt-10 w-full lg:px-5">
+      <div className="font-aero text-white mt-10 w-full lg:px-5 lg:max-w-[1400px]">
         <p
           className="text-2xl mb-4
         lg:text-3xl
@@ -70,11 +70,7 @@ const About = () => {
         >
           Hard Skills
         </p>
-        <div
-          className=" 
-          lg:max-w-[1400px] lg:grid lg:grid-cols-3 lg:gap-x-10"
-          id="hardSkills"
-        >
+        <div className="  lg:grid lg:grid-cols-3 lg:gap-x-10" id="hardSkills">
           <HardSkills hardskills={h_skills} isOn={skills} />
         </div>
       </div>

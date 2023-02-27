@@ -82,17 +82,11 @@ const SlideMenu: FunctionComponent = () => {
                   `}
                 >
                   <span
-                    className=" text-purple flex h-full duration-200 items-center z-[11] top-0 
-                    
+                    className=" text-purple flex h-full duration-200 items-center z-[11] top-0
                     2xl:text-4xl 2xl:left-[.3em]
-
                     xl:text-3xl xl:left-[.4em]
-
                     lg:text-2xl lg:left-3 lg:px-0 lg:absolute
-
-                    xsm:text-lg 
-
-                    px-2 w-auto
+                    text-lg px-2
                   
                   "
                   >
@@ -101,18 +95,11 @@ const SlideMenu: FunctionComponent = () => {
                     </span>
 
                     <span
-                      className=" text-center 
-
-                      2xl:w-60 2xl:text-2xl 
-
-                      xl:w-48 xl:text-xl xl:mb-2
-
-                      lg:w-44 lg:text-lg lg:mb-1 lg:absolute
-
-                      xsm:text-base
-
+                      className=" text-center
                       text-[.75em] w-full
-                      
+                      2xl:w-60 2xl:text-2xl 
+                      xl:w-48 xl:text-xl xl:mb-2
+                      lg:w-44 lg:text-lg lg:mb-1 lg:absolute
                       "
                     >
                       {elem.skill}
@@ -140,17 +127,11 @@ const SlideMenu: FunctionComponent = () => {
                   `}
                 >
                   <span
-                    className=" text-purple flex h-full duration-200 items-center z-[11] top-0 
-                    
+                    className=" text-purple flex h-full duration-200 items-center z-[11] top-0
                     2xl:text-4xl 2xl:left-[.3em]
-
                     xl:text-3xl xl:left-[.4em]
-
                     lg:text-2xl lg:left-3 lg:px-0 lg:absolute
-
-                    xsm:text-lg 
-
-                    px-2 w-auto
+                    text-lg px-2
                   
                   "
                   >
@@ -159,18 +140,11 @@ const SlideMenu: FunctionComponent = () => {
                     </span>
 
                     <span
-                      className=" text-center 
-
-                      2xl:w-60 2xl:text-2xl 
-
-                      xl:w-48 xl:text-xl xl:mb-2
-
-                      lg:w-44 lg:text-lg lg:mb-1 lg:absolute
-
-                      xsm:text-base
-
+                      className=" text-center
                       text-[.75em] w-full
-                      
+                      2xl:w-60 2xl:text-2xl 
+                      xl:w-48 xl:text-xl xl:mb-2
+                      lg:w-44 lg:text-lg lg:mb-1 lg:absolute
                       "
                     >
                       {elem.skill}
