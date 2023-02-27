@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         orange: "#f2a172",
         purple: "#4f1ca0",
+        "bg-color": "#161616",
+        white: "#f6f6f6",
       },
       fontFamily: {
         aero: "Aero Matics",
@@ -23,28 +26,28 @@ module.exports = {
         "6xl": "3.7rem",
         "7xl": "4.2rem",
       },
-      borderWidth: {
-        DEFAULT: "1px",
-        0: "0",
-        2: "2px",
-        3: "3px",
-        4: "4px",
-        6: "6px",
-        8: "8px",
-      },
       backgroundSize: {
         auto: "auto",
         cover: "cover",
         contain: "contain",
         "250%": "250% 250%",
       },
-      backgroundPosition:{
-        "p-30%": "22% 30%"
+      backgroundPosition: {
+        "p-30%": "22% 30%",
       },
       screens: {
         xsm: "350px",
       },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(-110%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
+      animation: {
+        slide: "slide 1500ms ease-in-out",
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],
-};
+});

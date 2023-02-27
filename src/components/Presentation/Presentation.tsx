@@ -8,7 +8,7 @@ import citySvg from "../../../public/city.svg";
 import DevFrontDecoration from "../DevFrontDecoration/DevFrontDecoration";
 import SlideMenu from "../SlideMenu/SlideMenu";
 
-const About = () => {
+const Presentation = () => {
   return (
     <section id="presentation">
       <div
@@ -48,7 +48,7 @@ const About = () => {
         </div>
         <div
           className="
-          h-full w-full absolute overflow-hidden"
+          h-full w-full absolute overflow-hidden z-[220]"
         >
           <div className="citySvg">
             <Image
@@ -74,7 +74,7 @@ const About = () => {
           </div>
           <div
             className="
-          bg-[#111] z-[200] absolute rotate-[39deg]
+          bg-bg-color z-[200] absolute rotate-[39deg]
             
             lg:w-[440px] lg:h-[200px] lg:left-[-140px] lg:bottom-0
             w-[120px] h-[60px] left-[-40px] bottom-1/3
@@ -82,7 +82,7 @@ const About = () => {
           ></div>
           <div
             className="
-          bg-[#111] z-[67] absolute 
+          bg-bg-color z-[67] absolute 
             lg:w-0
             w-full h-1/3 bottom-[1px]
             "
@@ -118,4 +118,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Presentation;

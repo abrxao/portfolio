@@ -4,7 +4,7 @@
 @import './fonts/stylesheet.css';
 @import '../components/SlideMenu/SlideMenu.css';
 @import '../components/DevFrontDecoration/DevFrontDecoration.css';
-
+@import '../components/Progress/Progress.css';
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,14 +12,23 @@
 }
 .mapBackground{
  background-image: url('../../public/map-texture.png');
- 
 }
 
-.devFrontend__text{
-  -webkit-text-stroke: .3px #f2a172;
-}
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
+}
+body::-webkit-scrollbar,
+html::-webkit-scrollbar{
+  width: .5em;
+  background-color: #161616;
+}
+body::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+  background: #161616;
+}
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+  background:#4f1ca0;
+  border-radius: .4em;
 }

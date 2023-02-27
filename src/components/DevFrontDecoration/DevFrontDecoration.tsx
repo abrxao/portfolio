@@ -8,12 +8,12 @@ const DevFrontDecoration=()=>{
 
         xl:text-2xl
 
-        lg:text-xl lg:top-[-20px] lg:right-0 lg:rotate-180 lg:pb-4 lg:px-0 lg:bottom-0 lg:left-auto lg:h-full lg:w-auto
+        lg:text-xl lg:top-0 lg:right-3 lg:rotate-0 lg:pb-4 lg:px-0 lg:bottom-0 lg:left-auto lg:h-full lg:w-auto
         
         top-1/2 -rotate-90 left-0 w-full h-1/2
         "
       >
-        <div className="lg:mr-[-.4em] -mt-1 text-orange h-full text-center line-clamp-1 text-clip ">
+        <div className="lg:mr-[-.4em] -mt-1 text-purple h-full text-center line-clamp-1 text-clip ">
           DEV - FRONT END. DEV - FRONT END. DEV - FRONT END. DEV - FRONT END.
           DEV - FRONT END. DEV - FRONT END.
         </div>

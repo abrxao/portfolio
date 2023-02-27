@@ -72,11 +72,11 @@ const SlideMenu: FunctionComponent = () => {
                   className={`
                   rounded-[2em] bg-white duration-200 overflow-hidden
 
-                  2xl:px-8 2xl:py-8 lg:hover:px-[110px]
+                  2xl:px-8 2xl:py-8 2xl:hover:px-[110px]
                   
-                  xl:px-7 xl:py-7
+                  xl:px-7 xl:py-7 xl:hover:px-[90px]
 
-                  lg:px-6 lg:py-6 lg:relative lg:w-0
+                  lg:px-6 lg:py-6 lg:relative lg:w-0 lg:hover:px-[80px]
                   
                   py-1 px-1
                   `}
@@ -130,11 +130,11 @@ const SlideMenu: FunctionComponent = () => {
                   className={`
                   rounded-[2em] bg-white duration-200 overflow-hidden
 
-                  2xl:px-8 2xl:py-8 lg:hover:px-[110px]
+                  2xl:px-8 2xl:py-8 2xl:hover:px-[110px]
                   
-                  xl:px-7 xl:py-7
+                  xl:px-7 xl:py-7 xl:hover:px-[90px]
 
-                  lg:px-6 lg:py-6 lg:relative lg:w-0
+                  lg:px-6 lg:py-6 lg:relative lg:w-0 lg:hover:px-[80px]
                   
                   py-1 px-1
                   `}

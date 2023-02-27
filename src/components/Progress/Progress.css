@@ -1,0 +1,32 @@
+.progressBar{
+    background-image: linear-gradient(to left, #f2a172,#4f1ca0,#f2a172,#4f1ca0,#f2a172);
+}
+
+.animatedProgress{
+    animation: animatedProgress 2s ease-in-out;
+}
+.animatedProgTwo{
+ animation: animatedProgTwo 1500ms ease-in-out infinite;
+}
+
+@keyframes animatedProgress{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}
+@keyframes animatedProgTwo{
+    0%{
+        opacity: .2;
+        left: -125%
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        opacity: .2;
+        left: 100%;
+    }
+}
