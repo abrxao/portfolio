@@ -1,6 +1,7 @@
 import { Tooltip } from "@material-tailwind/react";
 import Link from "next/link";
 import React, { FunctionComponent } from "react";
+import SmoothScrollLink from "../SmoothScrollLink/SmoothScrollLink";
 
 const Header: FunctionComponent = () => {
   return (
@@ -14,7 +15,7 @@ const Header: FunctionComponent = () => {
       "
       >
         <li>
-          <Link href="#about">about.</Link>
+          <SmoothScrollLink href="#about">about.</SmoothScrollLink>
         </li>
         <li className="cursor-not-allowed">
           <Tooltip content="not ready" className="border border-white p-2">
