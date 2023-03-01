@@ -12,7 +12,7 @@ const Presentation = () => {
   return (
     <section id="presentation">
       <div
-        className="relative w-full overflow-y-hidden flex flex-col overflow-x-hidden
+        className="relative w-full max-h-[900px] overflow-y-hidden flex flex-col overflow-x-hidden
 
         lg:h-[100vh] lg:min-h-[none]
 
@@ -62,14 +62,14 @@ const Presentation = () => {
           </div>
           <div
             className="aspect-[1] z-50  absolute 
-            lg:h-[100vh] lg:bottom-10 lg:w-auto
+            lg:h-[100vh] lg:bottom-0 lg:w-auto lg:max-h-[900px]
             w-2/3 bottom-1/3
             "
           >
             <Image
               src={perfil}
               alt="abraão´s picture"
-              className="object-cover"
+              className="object-cover "
               sizes="(min-width: 0px) 500px
                       (min-width: 1000px) 1000px"
             />

@@ -43,13 +43,16 @@ const About = () => {
   return (
     <section
       id="about"
-      className="-mt-1 bg-bg-color px-5 pb-2 pt-8 flex flex-col items-center animation-slide"
+      className="-mt-1 bg-bg-color px-5 py-20 flex flex-col items-center"
     >
       <div
-        className="w-1/2 h-3 bg-orange rounded-3xl shadow-inner shadow-[#111a]
+        className="w-1/2 h-3 animate-about relative bg-orange rounded-3xl shadow-inner shadow-[#111a]
         lg:mt-10
         "
-      ></div>
+      >
+        <span className="bg-orange absolute h-full rounded-3xl animate-aboutl"></span>
+        <span className="bg-orange absolute h-full rounded-3xl animate-aboutr"></span>
+      </div>
       <div
         className="text-orange font-aero w-full text-center 
         lg:text-7xl lg:my-20
