@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React, { FunctionComponent } from "react";
 import clickgameGif from "public/clickgame.gif";
+import fipeGif from "public/fipe.gif";
+import conversionsGif from "public/conversions.gif";
 import data_boardGif from "public/data_board.gif";
 import apex from "public/apex.svg";
 import {
@@ -13,7 +15,13 @@ import {
 } from "@material-tailwind/react";
 import { FiGithub } from "react-icons/fi";
 import IconBtn from "../IconBtn/IconBtn";
-import { SiReact, SiChakraui, SiTypescript } from "react-icons/si";
+import {
+  SiReact,
+  SiChakraui,
+  SiTypescript,
+  SiNextdotjs,
+  SiSass,
+} from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import ImgModal from "../ImgModal/ImgModal";
 import Link from "next/link";
@@ -63,12 +71,8 @@ const Projects = () => {
               </Typography>
               <Typography
                 variant="lead"
-                color="gray"
-                className="mt-3 text-lg font-aero font-light text-white"
-              >
-                Because it&apos;s about motivating the doers. Because I&apos;m
-                here to follow my dreams and inspire others.
-              </Typography>
+                className=" text-lg font-aero font-light text-white"
+              ></Typography>
             </CardBody>
             <CardFooter className="flex items-center justify-between">
               <div className="flex items-center -space-x-3">
@@ -76,7 +80,7 @@ const Projects = () => {
                   content="React"
                   className="p-2 border border-white-opac bg-bg-color font-aero font-light"
                 >
-                  <div className="hover:z-10 group">
+                  <div className="hover:z-10">
                     <IconBtn zoom={1.4}>
                       <div className="group-hover:animate-spin">
                         <SiReact />
@@ -88,7 +92,7 @@ const Projects = () => {
                   content="Chakra UI"
                   className="p-2 border border-white-opac bg-bg-color font-aero font-light"
                 >
-                  <div className="hover:z-10 group">
+                  <div className="hover:z-10">
                     <IconBtn zoom={1.4}>
                       <div className="group-hover:animate-pulse">
                         <SiChakraui />
@@ -100,7 +104,7 @@ const Projects = () => {
                   content="Typescript"
                   className="p-2 border border-white-opac bg-bg-color font-aero font-light"
                 >
-                  <div className="hover:z-10 group">
+                  <div className="hover:z-10">
                     <IconBtn zoom={1.4}>
                       <div className="group-hover:animate-bounce">
                         <SiTypescript />
@@ -110,15 +114,20 @@ const Projects = () => {
                 </Tooltip>
               </div>
 
-              <Link className="group" href="https://github.com/abrxao/clickgame" target="_blank">
+              <Link
+                className="group"
+                href="https://github.com/abrxao/clickgame"
+                target="_blank"
+              >
                 <div className="flex gap-1">
                   <IconBtn>
                     <div className="group-hover:animate-pulse">
-
-                    <FiGithub />
+                      <FiGithub />
                     </div>
                   </IconBtn>
-                  <Typography className="flex font-aero text-orange group-hover:brightness-150">repo</Typography>
+                  <Typography className="flex font-aero text-orange group-hover:brightness-150">
+                    repo
+                  </Typography>
                 </div>
               </Link>
             </CardFooter>
@@ -140,10 +149,10 @@ const Projects = () => {
               <Typography variant="h5" className="text-orange font-aero">
                 Statistics project
               </Typography>
-              <Typography variant="lead" color="gray" className="mt-3 text-lg font-aero font-light text-white">
-                Because it&apos;s about motivating the doers. Because I&apos;m
-                here to follow my dreams and inspire others.
-              </Typography>
+              <Typography
+                variant="lead"
+                className=" text-lg font-aero font-light text-white"
+              ></Typography>
             </CardBody>
             <CardFooter className="flex items-center justify-between">
               <div className="flex items-center -space-x-3">
@@ -151,7 +160,7 @@ const Projects = () => {
                   content="Vanilla JavaScript"
                   className="p-2 border border-white-opac bg-bg-color font-aero font-light"
                 >
-                  <div className="hover:z-10 group">
+                  <div className="hover:z-10">
                     <IconBtn zoom={1.4}>
                       <div className="group-hover:animate-bounce">
                         <DiJavascript1 />
@@ -163,7 +172,7 @@ const Projects = () => {
                   content="ApexCharts.js"
                   className="p-2 border border-white-opac bg-bg-color font-aero font-light"
                 >
-                  <div className="hover:z-10 group">
+                  <div className="hover:z-10">
                     <IconBtn zoom={1.4}>
                       <div className="group-hover:animate-pulse">
                         <Image src={apex} alt="apex" className="" />
@@ -172,23 +181,182 @@ const Projects = () => {
                   </div>
                 </Tooltip>
               </div>
-              <Link className="group"
+              <Link
+                className="group "
                 href="https://github.com/abrxao/gerRandomVar"
                 target="_blank"
               >
                 <div className="flex gap-1">
                   <IconBtn>
                     <div className="group-hover:animate-pulse">
-
-                    <FiGithub />
+                      <FiGithub />
                     </div>
                   </IconBtn>
-                  <Typography className="flex font-aero text-orange group-hover:brightness-150">repo</Typography>
+                  <Typography className="flex font-aero text-orange group-hover:brightness-150">
+                    repo
+                  </Typography>
                 </div>
               </Link>
             </CardFooter>
           </Card>
 
+          <Card className="bg-bg-color h-full border max-w-[400px] border-white-opac overflow-hidden">
+            <CardHeader
+              floated={false}
+              shadow={false}
+              color="transparent"
+              className="m-0 p-0 rounded-none border-b border-white-opac aspect-video"
+            >
+              <ImgModal>
+                <Image src={conversionsGif} alt="databoard" />
+              </ImgModal>
+            </CardHeader>
+
+            <CardBody>
+              <Typography variant="h5" className="text-orange font-aero">
+                Convert currency
+              </Typography>
+              <Typography
+                variant="lead"
+                className=" text-lg font-aero font-light text-white"
+              ></Typography>
+            </CardBody>
+            <CardFooter className="flex items-center justify-between">
+              <div className="flex items-center -space-x-3">
+                <Tooltip
+                  content="Next.js"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-bounce">
+                        <SiNextdotjs />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  content="Chakra.ui"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-spin">
+                        <SiChakraui />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  content="Typescript"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-ping">
+                        <SiTypescript />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+              </div>
+              <Link
+                className="group "
+                href="https://github.com/abrxao/EBAC-React/tree/main/context-api"
+                target="_blank"
+              >
+                <div className="flex gap-1">
+                  <IconBtn>
+                    <div className="group-hover:animate-pulse">
+                      <FiGithub />
+                    </div>
+                  </IconBtn>
+                  <Typography className="flex font-aero text-orange group-hover:brightness-150">
+                    repo
+                  </Typography>
+                </div>
+              </Link>
+            </CardFooter>
+          </Card>
+
+          <Card className="bg-bg-color h-full border max-w-[400px] border-white-opac overflow-hidden">
+            <CardHeader
+              floated={false}
+              shadow={false}
+              color="transparent"
+              className="m-0 p-0 rounded-none border-b border-white-opac aspect-video"
+            >
+              <ImgModal>
+                <Image src={fipeGif} alt="databoard" />
+              </ImgModal>
+            </CardHeader>
+
+            <CardBody>
+              <Typography variant="h5" className="text-orange font-aero">
+                Query on FIPE table
+              </Typography>
+              <Typography
+                variant="lead"
+                className=" text-lg font-aero font-light text-white"
+              ></Typography>
+            </CardBody>
+            <CardFooter className="flex items-center justify-between">
+              <div className="flex items-center -space-x-3">
+                <Tooltip
+                  content="Next.js"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-bounce">
+                        <SiNextdotjs />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  content="Sass"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-spin">
+                        <SiSass />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  content="Typescript"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-ping">
+                        <SiTypescript />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+              </div>
+              <Link
+                className="group "
+                href="https://github.com/abrxao/EBAC-React/tree/main/search-fipe"
+                target="_blank"
+              >
+                <div className="flex gap-1">
+                  <IconBtn>
+                    <div className="group-hover:animate-pulse">
+                      <FiGithub />
+                    </div>
+                  </IconBtn>
+                  <Typography className="flex font-aero text-orange group-hover:brightness-150">
+                    repo
+                  </Typography>
+                </div>
+              </Link>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </section>

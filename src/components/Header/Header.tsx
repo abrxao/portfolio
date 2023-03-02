@@ -8,7 +8,6 @@ const Header: FunctionComponent = () => {
     const target = e.target as HTMLElement;
     const href = target.getAttribute("href")?.replace("/", "");
     const element = document.querySelector(href as string);
-    console.log(element);
     if (element) {
       const position = element.getBoundingClientRect().top;
       window.scrollTo({

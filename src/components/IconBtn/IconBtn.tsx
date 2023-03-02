@@ -7,9 +7,7 @@ interface IconBtn extends PropsWithChildren{
 const IconBtn: FunctionComponent<IconBtn> = ({ children, zoom }) => {
   return (
     <span
-      className="bg-white text-purple p-1 h-6 flex items-center justify-center rounded-md cursor-pointer border border-bg-color
-                    lg:p-2 lg:h-8 lg:text-xl
-                    "
+      className="bg-white text-purple p-1 aspect-square flex items-center justify-center rounded-md cursor-pointer border border-bg-color lg:text-xl"
 
      style={{zoom:zoom??1}}
     >
