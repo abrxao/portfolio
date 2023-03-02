@@ -37,8 +37,27 @@ const Contact = () => {
         >
           contact.
         </div>
-        <ul className="lg:flex w-full justify-around grid grid-cols-1 gap-x-10 gap-y-5 mt-10 xsm:grid-cols-2">
-          <li className="text-lg hover:opacity-80 hover:tracking-widest w-full flex justify-center duration-150">
+
+        <ul className="lg:flex lg:ml-10 w-full lg:justify-around grid grid-cols-1 gap-x-10 lg:max-w-none gap-y-5 mt-10 xsm:grid-cols-2 px-6 xsm:pl-10 max-w-[550px]">
+          <li className="text-lg hover:opacity-80 hover:tracking-widest w-full flex lg:justify-center justify-center duration-150">
+            <div className="flex ">
+              <span
+                className="bg-white text-purple p-1 h-6 flex items-center justify-center rounded-md mr-2 cursor-pointer
+                    lg:p-2 lg:h-10 lg:text-2xl lg:mr-4 lg:-mt-1
+                    "
+              >
+                <SiGmail />
+              </span>
+              <Link
+                href={"mailto:abrxao@gmail.com"}
+                target="_blank"
+                className="lg:text-2xl"
+              >
+                abrxao@gmail.com
+              </Link>
+            </div>
+          </li>
+          <li className="text-lg hover:opacity-80 hover:tracking-widest w-full flex justify-center lg:justify-center duration-150">
             <div className="flex">
               <span
                 className="bg-white text-purple p-1 h-6 flex items-center justify-center rounded-md mr-2 cursor-pointer
@@ -57,7 +76,7 @@ const Contact = () => {
             </div>
           </li>
 
-          <li className="text-lg hover:opacity-80 hover:tracking-widest w-full flex justify-center duration-150">
+          <li className="text-lg hover:opacity-80 hover:tracking-widest w-full flex lg:justify-center justify-center duration-150">
             <div className="flex">
               <span
                 className="bg-white text-purple p-1 h-6 flex items-center justify-center rounded-md mr-2 cursor-pointer
@@ -76,26 +95,7 @@ const Contact = () => {
             </div>
           </li>
 
-          <li className="text-lg hover:opacity-80 hover:tracking-widest w-full flex justify-center duration-150">
-            <div className="flex ">
-              <span
-                className="bg-white text-purple p-1 h-6 flex items-center justify-center rounded-md mr-2 cursor-pointer
-                    lg:p-2 lg:h-10 lg:text-2xl lg:mr-4 lg:-mt-1
-                    "
-              >
-                <SiGmail />
-              </span>
-              <Link
-                href={"mailto:abrxao@gmail.com"}
-                target="_blank"
-                className="lg:text-2xl"
-              >
-                abrxao@gmail.com
-              </Link>
-            </div>
-          </li>
-
-          <li className="text-lg hover:opacity-80 hover:tracking-widest w-full flex justify-center duration-150">
+          <li className="text-lg hover:opacity-80 hover:tracking-widest w-full flex lg:justify-centerjustify-center duration-150">
             <div className="flex">
               <span
                 className="bg-white text-purple p-1 h-6 flex items-center justify-center rounded-md mr-2 cursor-pointer

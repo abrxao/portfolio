@@ -13,9 +13,7 @@ const Presentation = () => {
     <section id="presentation">
       <div
         className="relative w-full max-h-[900px] overflow-y-hidden flex flex-col overflow-x-hidden
-
         lg:h-[100vh] lg:min-h-[none]
-
         h-[80vh] min-h-[500px]
         "
       >
@@ -77,7 +75,6 @@ const Presentation = () => {
           <div
             className="
           bg-bg-color z-[200] absolute rotate-[39deg]
-            
             lg:w-[440px] lg:h-[200px] lg:left-[-140px] lg:bottom-0
             w-[120px] h-[60px] left-[-40px] bottom-1/3
             "

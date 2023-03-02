@@ -3,9 +3,7 @@ import Link from "next/link";
 import React, { FunctionComponent } from "react";
 
 const Header: FunctionComponent = () => {
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     const target = e.target as HTMLElement;
     const href = target.getAttribute("href")?.replace("/", "");
@@ -15,7 +13,7 @@ const Header: FunctionComponent = () => {
       const position = element.getBoundingClientRect().top;
       window.scrollTo({
         top: position,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   };
@@ -30,17 +28,19 @@ const Header: FunctionComponent = () => {
       "
       >
         <li>
-          <Link href="#about" onClick={e=>handleClick(e)}>about.</Link>
+          <Link href="#about" onClick={(e) => handleClick(e)}>
+            about.
+          </Link>
         </li>
         <li className="cursor-not-allowed">
-          <Tooltip content="not ready" className="border border-white p-2">
+          <Link href="#projects" onClick={(e) => handleClick(e)}>
             projects.
-          </Tooltip>
+          </Link>
         </li>
-        <li className="cursor-not-allowed">
-          <Tooltip content="not ready" className="border border-white p-2">
+        <li>
+          <Link href="#contact" onClick={(e) => handleClick(e)}>
             contact.
-          </Tooltip>
+          </Link>
         </li>
       </ul>
     </header>

@@ -2,6 +2,7 @@
 const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = withMT({
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -9,6 +10,7 @@ module.exports = withMT({
         purple: "#4f1ca0",
         "bg-color": "#161616",
         white: "#f6f6f6",
+        "white-opac": "#f6f6f640",
       },
       fontFamily: {
         aero: "Aero Matics",
