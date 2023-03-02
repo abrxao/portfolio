@@ -64,7 +64,7 @@ const Projects = () => {
               <Typography
                 variant="lead"
                 color="gray"
-                className="mt-3 text-lg font-aero"
+                className="mt-3 text-lg font-aero font-light text-white"
               >
                 Because it&apos;s about motivating the doers. Because I&apos;m
                 here to follow my dreams and inspire others.
@@ -137,10 +137,10 @@ const Projects = () => {
             </CardHeader>
 
             <CardBody>
-              <Typography variant="h5" className="text-orange">
+              <Typography variant="h5" className="text-orange font-aero">
                 Statistics project
               </Typography>
-              <Typography variant="lead" color="gray" className="mt-3 text-lg">
+              <Typography variant="lead" color="gray" className="mt-3 text-lg font-aero font-light text-white">
                 Because it&apos;s about motivating the doers. Because I&apos;m
                 here to follow my dreams and inspire others.
               </Typography>
