@@ -115,11 +115,10 @@ const Contact = () => {
           </li>
         </ul>
       </div>
-      <Image
-        src={svgFooter}
-        alt="final svg"
-        className="zoomSvg object-none h-60"
-      />
+      <div className="h-40 bg-bg-color relative">
+        <Image src={svgFooter} alt="final svg" className=" absolute zoomSvg object-none h-60 bottom-0" />
+      </div>
+      
     </section>
   );
 };
