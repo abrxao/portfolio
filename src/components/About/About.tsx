@@ -7,6 +7,7 @@ import { FiGithub } from "react-icons/fi";
 import { DiScrum } from "react-icons/di";
 import {
   SiTailwindcss,
+  SiMongodb,
   SiJavascript,
   SiTypescript,
   SiReact,
@@ -20,13 +21,14 @@ const h_skills: skillsObj[] = [
   { skill: "JavaScript", icon: SiJavascript, progress: 75 },
   { skill: "React", icon: SiReact, progress: 58 },
   { skill: "TypeScript", icon: SiTypescript, progress: 58 },
-  { skill: "Next.js", icon: SiNextdotjs, progress: 42 },
+  { skill: "Next.js", icon: SiNextdotjs, progress: 45 },
   { skill: "Sass", icon: SiSass, progress: 92 },
   { skill: "Github", icon: FiGithub, progress: 85 },
   { skill: "Tailwindcss", icon: SiTailwindcss, progress: 70 },
   { skill: "jQuery", icon: SiJquery, progress: 40 },
   { skill: "WebPack", icon: SiWebpack, progress: 63 },
   { skill: "Scrum - agile methodology", icon: DiScrum, progress: 67 },
+  { skill: "MongoDB", icon: SiMongodb, progress: 37 },
 ];
 const About = () => {
   const [skills, setSkills] = useState(false);
