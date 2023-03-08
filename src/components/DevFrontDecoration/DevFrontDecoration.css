@@ -1,8 +1,15 @@
+@media(min-width: 1024px) {
 .DevFrontDecoration{
     writing-mode:vertical-rl;
 }
+}
+
+.DevFrontDecoration{
+    writing-mode:sideways-rl;
+}
+
 
 .devFrontend__text{
   color:#fff0;
-  -webkit-text-stroke: .7px #4f1ca0;
+  -webkit-text-stroke: 1px #4f1ca0;
 }

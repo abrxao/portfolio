@@ -102,7 +102,7 @@ const Contact = () => {
                     lg:p-2 lg:h-10 lg:text-2xl lg:mr-4 lg:-mt-1
                     "
               >
-                <FiGithub />
+                <FiGithub/>
               </span>
               <Link
                 href={"https://github.com/abrxao"}
