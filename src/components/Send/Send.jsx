@@ -7,11 +7,10 @@ export default function Send() {
   async function handleSend(e) {
     e.preventDefault();
     const { data } = await axios({
-      method: 'post',
+      method: "post",
       url: "/api/banco",
-      data: { name: value, gender: gender},
+      data: { name: value, gender: gender },
     });
-    console.log(data);
   }
 
   return (
