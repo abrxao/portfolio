@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { FunctionComponent } from "react";
 import clickgameGif from "public/clickgame.gif";
 import fipeGif from "public/fipe.gif";
+import formsGif from "public/forms.gif";
 import conversionsGif from "public/conversions.gif";
 import data_boardGif from "public/data_board.gif";
 import apex from "public/apex.svg";
@@ -21,6 +22,8 @@ import {
   SiTypescript,
   SiNextdotjs,
   SiSass,
+  SiJavascript,
+  SiMongodb,
 } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import ImgModal from "../ImgModal/ImgModal";
@@ -342,6 +345,97 @@ const Projects = () => {
               <Link
                 className="group "
                 href="https://github.com/abrxao/EBAC-React/tree/main/search-fipe"
+                target="_blank"
+              >
+                <div className="flex gap-1">
+                  <IconBtn>
+                    <div className="group-hover:animate-pulse">
+                      <FiGithub />
+                    </div>
+                  </IconBtn>
+                  <Typography className="flex font-aero text-orange group-hover:brightness-150">
+                    repo
+                  </Typography>
+                </div>
+              </Link>
+            </CardFooter>
+          </Card>
+
+          <Card className="bg-bg-color h-full border max-w-[400px] border-white-opac overflow-hidden">
+            <CardHeader
+              floated={false}
+              shadow={false}
+              color="transparent"
+              className="m-0 p-0 rounded-none border-b border-white-opac aspect-video"
+            >
+              <ImgModal>
+                <Image src={formsGif} alt="databoard" />
+              </ImgModal>
+            </CardHeader>
+
+            <CardBody>
+              <Typography variant="h5" className="text-orange font-aero">
+                Form with mongoDB usage
+              </Typography>
+              <Typography
+                variant="lead"
+                className=" text-lg font-aero font-light text-white"
+              ></Typography>
+            </CardBody>
+            <CardFooter className="flex items-center justify-between">
+              <div className="flex items-center -space-x-3">
+                <Tooltip
+                  content="Next.js"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-bounce">
+                        <SiNextdotjs />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  content="Sass"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-spin">
+                        <SiSass />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  content="Javascript"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-ping">
+                        <SiJavascript />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  content="MongoDB"
+                  className="p-2 border border-white-opac bg-bg-color font-aero font-light"
+                >
+                  <div className="hover:z-10">
+                    <IconBtn zoom={1.4}>
+                      <div className="group-hover:animate-ping">
+                        <SiMongodb />
+                      </div>
+                    </IconBtn>
+                  </div>
+                </Tooltip>
+              </div>
+              <Link
+                className="group "
+                href="https://github.com/abrxao/EBAC-React/tree/main/forms"
                 target="_blank"
               >
                 <div className="flex gap-1">
